@@ -3,12 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>To Do List</title>
-    <link rel="stylesheet" href="public/">
+    <link rel="stylesheet" href="public/css/style.min.css">
 </head>
 <body>
 <div class="container">
-    <ul id="toDoList" class="toDoList"></ul>
+    <h4 class="list__title">Список продуктов</h4>
+    <ul id="list" class="list"></ul>
+    <button class="list__button list__button--add" id="open-button">
+        <span class="list__button-title">Добавить запись</span>
+    </button>
 </div>
+
+<div class="modal-overlay" id="modal-overlay"></div>
+
+<div class="modal" id="modal">
+    <button class="list__button list__button--close" id="close-button">
+        <span class="list__button-title">Закрыть</span>
+    </button>
+</div>
+
+
 <script src="src/assets/js/main.js"></script>
 </body>
 </html>
